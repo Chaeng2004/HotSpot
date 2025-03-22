@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password HopStop</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="back">&larr;</a>
+        <h2>Forgot Password</h2>
+        <p>Please select an option to receive the reset link.</p>
+
+        <div class="option">
+            <input type="radio" id="email" name="reset" checked>
+            <label for="email">
+                <img src="email.png" alt="Email Icon">
+                <span>
+                    <strong>Reset via Email</strong><br>
+                    <p>Link will be sent to your registered email.</p>
+                </span>
+            </label>
+        </div>
+
+        <div class="option">
+            <input type="radio" id="sms" name="reset">
+            <label for="sms">
+                <img src="telephone-handle-silhouette.png" alt="SMS Icon">
+                <span>
+                    <strong>Reset via SMS</strong><br>
+                    <p>Link will be sent to your registered phone number.</p>
+                </span>
+            </label>
+        </div>
+
+        <button class="send-link">Send Link</button>
+    </div>
+</body>
+</html>
