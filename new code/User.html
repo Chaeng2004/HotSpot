@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="User.css">
+  <title>HopStop</title>
+ 
+</head>
+<body>
+  <div id="main-container">
+    <header>
+      <div class="container nav-container">
+          <div class="logo">
+              <div class="logo-circle"></div>
+              <span><b>HopStop</b></span>
+          </div>
+          <nav>
+              <ul class="nav-links">
+                  <li><a href="Homepage.html">Home</a></li>
+                  <li><a href="Aboutpage.html">About</a></li>
+                  <li><a href="Contactpage.html">Contact</a></li>
+              </ul>
+          </nav>
+         
+          <div class="user-profile" id="profileButton">
+              <i class ="fas fa-user-circle"></i>
+          </div>
+         
+          <div class="profile-dropdown" id="profileDropdown">
+              <div class="dropdown-item">Profile</div>
+              <div class="dropdown-item">Logout</div>
+          </div>
+      </div>
+    </header>
+    
+    <section class="hero">
+      <div class="container">
+          <p>Welcome to HopStop where you can book seats in advance.</p>
+      </div>
+    </section>
+
+    <section class="banner">
+      <h1>HopStop</h1>
+    </section>
+    
+    <section class="search-container">
+      <div class="search-title">Book your ticket now!</div>
+      <div class="search-fields">
+        <div class="search-field">
+          <label>From</label>
+          <select id="from-location">
+            <option selected disabled>Select origin</option>
+            <option value="Zamboanga">Zamboanga</option>
+            <option value="Manila">Manila</option>
+            <option value="Cebu">Cebu</option>
+            <option value="Davao">Davao</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label>To</label>
+          <select id="to-location">
+            <option selected disabled>Select destination</option>
+            <option value="Manila">Manila</option>
+            <option value="Zamboanga">Zamboanga</option>
+            <option value="Cebu">Cebu</option>
+            <option value="Davao">Davao</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label>Travel date</label>
+          <input type="date" id="departure-date">
+        </div>
+      </div>
+      <button id="search-btn" class="search-btn">Search</button>
+    </section>
+    
+    <section class="destinations container">
+      <h2>Famous Destinations</h2>
+      <div class="destination-grid">
+          <div class="destination-card">
+              <img class="destination-img" src="Homepage_image2.png" alt="Destination">
+              <div class="destination-info">
+                  <h3>PLACE</h3>
+                  <p>Description</p>
+              </div>
+          </div>
+          <div class="destination-card">
+              <img class="destination-img" src="Homepage_image2.png" alt="Destination">
+              <div class="destination-info">
+                  <h3>PLACE</h3>
+                  <p>Description</p>
+              </div>
+          </div>
+          <div class="destination-card">
+              <img class="destination-img" src="Homepage_image2.png" alt="Destination">
+              <div class="destination-info">
+                  <h3>PLACE</h3>
+                  <p>Description</p>
+              </div>
+          </div>
+          <div class="destination-card">
+              <img class="destination-img" src="Homepage_image2.png" alt="Destination">
+              <div class="destination-info">
+                  <h3>PLACE</h3>
+                  <p>Description</p>
+              </div>
+          </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container"></div>
+    </footer>
+   
+  </div>
+  
+  <!-- Results Page Container -->
+  <div id="results-container">
+    <header>
+      <div class="container nav-container">
+          <div class="logo">
+              <div class="logo-circle"></div>
+              <span><b>HopStop</b></span>
+          </div>
+          <nav>
+            <ul class="nav-links">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Aboutpage.html">About</a></li>
+                <li><a href="Contactpage.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="user-profile" id="profileButton">
+            <i class ="fas fa-user-circle"></i>
+        </div>
+       
+        <div class="profile-dropdown" id="profileDropdown">
+            <div class="dropdown-item">Profile</div>
+            <div class="dropdown-item">Logout</div>
+        </div>
+        </div>
+      <script src="User_account.js"></script>
+    </header>
+    
+    <section class="banner">
+      <h1>HopStop</h1>
+    </section>
+    
+    <section class="form-container">
+      <input type="text" id="location-display" class="location-input" readonly>
+    </section>
+    
+    <section class="results-container" id="search-results">
+      <!-- Results will be populated here by JavaScript -->
+    </section>
+  </div>
+
+<script src="User.js"></script>
+
+</body>
+</html>
