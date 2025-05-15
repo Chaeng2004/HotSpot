@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    perspective: 1000px;
+}
+
+.ticket-container {
+    width: 600px;
+    transform-style: preserve-3d;
+}
+
+.ticket {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 0 0 30px rgba(137, 92, 223, 0.2), 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+    transition: all 0.3s ease;
+}
+
+.ticket:hover {
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3), 0 0 40px rgba(137, 92, 223, 0.3);
+}
+
+.ticket-header {
+    background: linear-gradient(135deg, #ba94e9 0%, #9a5de6 100%);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateZ(20px);
+    position: relative;
+}
+
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #9a5de6;
+    font-weight: bold;
+    transform: translateZ(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 0 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateZ(15px);
+}
+
+.ticket-subtitle {
+    font-size: 14px;
+    margin: 0 0 0 15px;
+    opacity: 0.8;
+    transform: translateZ(12px);
+}
+
+.bus-id {
+    text-align: right;
+    font-size: 14px;
+    transform: translateZ(10px);
+}
+
+.ticket-body {
+    background-color: white;
+    padding: 25px;
+    transform-style: preserve-3d;
+}
+
+.ticket-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    transform-style: preserve-3d;
+}
+
+.ticket-field {
+    width: 45%;
+    transform: translateZ(5px);
+}
+
+.field-label {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 5px;
+    transform: translateZ(8px);
+}
+
+.field-value {
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    transform: translateZ(10px);
+}
+
+.ticket-footer {
+    height: 20px;
+    background: linear-gradient(135deg, #ba94e9 0%, #9a5de6 100%);
+    transform: translateZ(5px);
+}
